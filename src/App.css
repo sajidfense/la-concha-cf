@@ -5,8 +5,10 @@
   --orange: #f48915;
   --darkGrey: #464D53;
   --caloryCard: #656565;
-  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --appColor:  #3c3f45;
+  --planCard: linear-gradient(210.41deg,rgb(66, 146, 250) 1.14%,rgb(57, 222, 255) 100.75%);
+  --appColor:rgb(35, 35, 37);
+  --blue:rgb(87, 167, 248); /* New Blue Color */
+  --darkBlue:rgb(50, 132, 214); /* New Blue Color */
 }
 
 .App {
@@ -17,7 +19,103 @@
   flex-direction: column;
   gap: 6rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 0rem; /* Padding on left/right */
+  z-index: 2;
+  position: relative;
 }
+
 ::-webkit-scrollbar{
   display: none;
+}
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.btn{
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 300ms all;
+  display: flex;
+  align-items: centre;
+  justify-content: centre;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.blur{
+  background: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+}
+
+/* Scrolling Banner */
+.side-banner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 5%;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.side-banner.left {
+  left: 0;
+}
+
+.side-banner.right {
+  right: 0;
+}
+
+.banner-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap; /* ✅ Prevent wrapping */
+  color: white;
+  font-size: 3rem; /* ✅ Bigger */
+  font-weight: 900;
+  letter-spacing: 0.5rem; /* more spacing */
+  animation: scrollText 16s linear infinite;
+  text-align: center;
+  padding: 1rem 0; /* Padding for breathing room */
+}
+
+/* stroke effect */
+.banner-text.stroke-text {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* Keyframes */
+@keyframes scrollText {
+  0% {
+    transform: translateY(100%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(180deg);
+  }
+}
+
+/* Hide on mobile */
+@media screen and (max-width: 768px) {
+  .side-banner {
+    display: none;
+  }
+  .app {
+    width: 100%;
+  }
 }
