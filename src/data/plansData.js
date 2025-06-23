@@ -11,7 +11,7 @@ export const plansData = [
       </svg>
     ),
     name: "Full Season",
-    price: "€6,000",
+    price: "6,000",
     features: [
       "Registration",
       "Match and Training Kit",
@@ -30,7 +30,7 @@ export const plansData = [
       </svg>
     ),
     name: "Full Season (All Inclusive)",
-    price: "€10,000",
+    price: "9,700",
     features: [
       "Food + Accomdation + Transport",
       "Registration",
@@ -49,7 +49,7 @@ export const plansData = [
       </svg>
     ),
     name: "Training Camp / Invitational Trials",
-    price: "€1,000",
+    price: "1,000",
     features: [
       "4 Weeks",
       "Full Access to Training",

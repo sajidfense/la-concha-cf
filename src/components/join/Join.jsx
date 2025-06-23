@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';  // ✅ Added useRef import
+import React, { useRef } from 'react';  
 import './join.css';
 import emailjs from '@emailjs/browser';
 
-const Join = () => {  // ✅ Capitalized component name
+const Join = () => {
     const form = useRef();
 
     const sendEmail = (e) => {

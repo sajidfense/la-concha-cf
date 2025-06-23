@@ -5,6 +5,7 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
+import { Link } from 'react-router-dom';
 
 import { motion } from 'framer-motion';
 
@@ -68,7 +69,12 @@ const Hero = () => {
       </div>
 
       <div className="right-h">
-        <button className="btn">Join Now</button>
+        <button>
+        <Link to="/program" className="btn">
+        Join Now
+      </Link>
+        </button>
+
 
         <motion.div 
           initial={{ right: "-1rem" }}

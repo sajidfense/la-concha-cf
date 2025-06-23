@@ -1,7 +1,7 @@
 export const faqsData = [
   {
-    question: 'What age groups can join La Concha CF?',
-    answer: 'We welcome aspiring footballers from ages 6 to 18 in our youth development programs.'
+    question: 'What age groups can join Costa CF?',
+    answer: 'We welcome aspiring footballers from ages 16 to 24 in our development programs.'
   },
   {
     question: 'Where are your training facilities located?',
@@ -16,7 +16,7 @@ export const faqsData = [
     answer: 'No prior experience is required. We have programs suited for complete beginners as well as advanced players aiming for professional careers.'
   },
   {
-    question: 'What makes La Concha CF different from other academies?',
+    question: 'What makes Costa CF different from other clubs and academies?',
     answer: 'Our philosophy focuses on developing both athletic performance and personal character, offering holistic training under UEFA-licensed coaches.'
   },
   {
