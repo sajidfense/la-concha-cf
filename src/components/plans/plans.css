@@ -1,0 +1,119 @@
+.plans-container {
+  margin-top: -4rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.plans-blur-1,
+.plans-blur-2 {
+  position: absolute; /* ✅ Added */
+  background: var(--blue); /* or whatever your blur bg */
+  filter: blur(120px); /* Blur effect */
+  z-index: 0;
+}
+
+.plans-blur-1 {
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0rem;
+}
+
+.plans-blur-2 {
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: 0rem;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* ✅ for smaller screens */
+  z-index: 1;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--caloryCard);
+  color: white;
+  gap: 1rem;
+  padding: 2rem;
+  width: 15rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plan > svg {
+  fill: var(--blue);
+  width: 2rem;
+  height: 2rem;
+}
+
+.plan > span:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.plan > span:nth-child(3) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-direction: column; /* ✅ better column layout */
+  gap: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature > img {
+  width: 1rem;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--darkBlue); /* Optional darker hover */
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan {
+    width: 100%;
+    max-width: 20rem;
+  }
+  .plan:nth-child(2) {
+    transform: none;
+  }
+}
