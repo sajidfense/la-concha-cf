@@ -1,0 +1,36 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-us-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-us-text p {
+  color: var(--lightgray);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.about-us-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-us-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 3rem;
+}

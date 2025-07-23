@@ -1,0 +1,79 @@
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Header Wrapper */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo {
+  width: 4rem;
+  height: 2rem;
+}
+
+/* Header Menu (Desktop) */
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Hover effect on menu links */
+.header-menu > li:hover {
+  color: var(--blue);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  /* Hamburger Icon (Bars) */
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 99;
+    background-color: var(--appColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  /* Mobile Menu */
+  .header-menu {
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -4px 0px 30px rgba(0, 0, 0, 0.3);
+    z-index: 98;
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .header-menu > li {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+}
