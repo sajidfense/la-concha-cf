@@ -1,4 +1,4 @@
-import image1 from "../assets/t-image1.png";
+import image1 from "../assets/t-image1.jpg";
 import image2 from "../assets/t-image2.jpg";
 import image3 from "../assets/t-image3.jpg";
 
@@ -30,7 +30,7 @@ export const testimonialsData = [
     status: "Goalkeeper Coach | Former Malaga CF Player"
   },
   {
-    image : image3,
+    image : image2,
     review:'Lucas brings a dynamic edge to Costa C.F. as our Media & Content Strategist. With a sharp creative eye and a constant flow of fresh ideas, he excels at crafting engaging visuals and storytelling that capture the spirit of the club both on and off the pitch. His talent for editing and innovative content creation ensures our media presence stands out and evolves with every step we take.',
     name: 'LUCAS CASTANEDA',
     status: "Club Admin | Media & Content Strategist"
