@@ -1,10 +1,12 @@
 import image1 from "../assets/t-image1.png";
 import image2 from "../assets/t-image2.jpg";
 import image3 from "../assets/t-image3.jpg";
+import image4 from "../assets/t-image4.jpg";
+import image5 from "../assets/t-image5.jpg";
 
 export const testimonialsData = [
   {
-    image: image1,
+    image: image4,
     review:
       "Born in Romania and raised in Calgary, AB, Canada. He has been a player/head coach with the Calgary-based United Nova FC first team. He has been constantly seeking to develop and evolve as both a player and a coach during this time. Ingo's playing experience, both locally and abroad in Europe has provided him with the desire to foster effective development and skills in both youth and adult players, while guiding them in their journeys as football players. Various experiences in countries such as Spain, Gibraltar, Cyprus, and England have made him aware of so many differing cultures, methodologies, and various ways of training, adding to his love and passion for the beautiful game.",
     name: 'Ingo Ionescu',
@@ -13,12 +15,12 @@ export const testimonialsData = [
   {
     image: image1,
     review:
-      "Born in Romania and raised in Calgary, AB, Canada. He has been a player/head coach with the Calgary-based United Nova FC first team. He has been constantly seeking to develop and evolve as both a player and a coach during this time. Ingo's playing experience, both locally and abroad in Europe has provided him with the desire to foster effective development and skills in both youth and adult players, while guiding them in their journeys as football players. Various experiences in countries such as Spain, Gibraltar, Cyprus, and England have made him aware of so many differing cultures, methodologies, and various ways of training, adding to his love and passion for the beautiful game.",
+      "Henrique “Catanha” Guedes da Silva is a true Costa del Sol legend in Spanish football. During two iconic seasons at Málaga CF, he scored a remarkable 50 goals, leading the club to promotion in 1999 and achieving 24 goals in his La Liga debut year — just behind the league’s top scorer. He won the Segunda División Pichichi Trophy with 26 goals and became Malaga’s latest player to hit 20+ goals in a season.",
     name: 'Catanha',
     status : 'Head Coach'
   },
   {
-    image: image2,
+    image: image5,
     review: 'Born and raised in Gothenburg, Sweden. Theo has been playing in the Swedish fourth-fifth tier for a couple of years now. Theo is a fast & strong ballplaying  center-back. With his 193 centimeters, his also a great threat in the air. Theo wants to develop and inspire ambitious players. Theo will be assisting us in bringing players for potential opportunities in Sweden and the rest of Scandinavia.',
     name: 'THEO ANDERSSON',
     status: 'European Region Scout'
