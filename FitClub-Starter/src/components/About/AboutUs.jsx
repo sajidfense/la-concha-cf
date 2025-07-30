@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutus.css';
-
+import aboutus from "../assets/about-us.jpg";
 const AboutUs = () => {
   return (
     <div className="about-us" id="about-us">
@@ -16,7 +16,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="about-us-image">
-        <img src="/images/about-us-photo.jpg" alt="COSTA CF Team" />
+        <img src={aboutus} alt="COSTA CF Team" />
       </div>
     </div>
   );
